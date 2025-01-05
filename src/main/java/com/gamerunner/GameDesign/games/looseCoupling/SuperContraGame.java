@@ -1,5 +1,10 @@
 package com.gamerunner.GameDesign.games.looseCoupling;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("SuperContraQualifier")
 public class SuperContraGame implements GamingConsole {
 	@Override
 	public void up() {
